@@ -1,26 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import gameArr from "./components/gameArr.json"
+import Card from "./components/card/card"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    gameArr,
+  }
+  render (){
+    return (
+      <div class="container">
+        {this.state.gameArr.map(card => (
+          <Card
+            key={card.id}
+            image={card.image}
+            value={card.value}
+        />))}
+      </div>
+    )
+  }
 }
 
 export default App;
