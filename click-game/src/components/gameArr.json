@@ -2,26 +2,26 @@
     {
         "id": 1,
         "value": false,
-        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?1"
+        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=1"
     },
     {
         "id": 2,
         "value": false,
-        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?2"
+        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=2"
     },
     {
         "id": 3,
         "value": false,
-        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?3"
+        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=3"
     },
     {
         "id": 4,
         "value": false,
-        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?4"
+        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=4"
     },
     {
         "id": 5,
         "value": false,
-        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?5"
+        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=5"
     }
 ]
