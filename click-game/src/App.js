@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import gameArr from "./components/gameArr.json"
 import Card from "./components/card/card"
+import Wrapper from "./components/Wrapper"
+import Shuffle from 'shuffle-array'
 
 class App extends React.Component {
   state = {
     gameArr,
+    currArr: [],
     count: 0,
     clicked: [],
   }
@@ -36,21 +38,24 @@ class App extends React.Component {
     this.gameCheck(e)
   }
 
+
+
   render (){
     return (
       <div className="container">
-        
         <h1>Score: {this.state.count}</h1>
-        {this.state.gameArr.map(card => (
+        <Wrapper>
+        {Shuffle(this.state.gameArr).map(card => (
           <Card
             key={card.id}
             cardId={card.id}
             image={card.image}
-            value={card.value}
             function={this.cardClick}
             function2={this.checkForWin}
         />))}
+      </Wrapper>
       </div>
+
     )
   }
 }
