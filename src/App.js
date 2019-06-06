@@ -8,7 +8,6 @@ import Shuffle from 'shuffle-array'
 class App extends React.Component {
   state = {
     gameArr,
-    currArr: [],
     count: 0,
     clicked: [],
   }
