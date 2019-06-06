@@ -38,12 +38,10 @@ class App extends React.Component {
     this.gameCheck(e)
   }
 
-
-
   render (){
     return (
       <div className="container">
-        <h1>Score: {this.state.count}</h1>
+        <h2>Score: {this.state.count}</h2>
         <Wrapper>
         {Shuffle(this.state.gameArr).map(card => (
           <Card
